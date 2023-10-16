@@ -1,0 +1,35 @@
+/* Reset CSS */
+
+/* Supprime les marges et les rembourrages par défaut */
+body, h1, h2, h3, p, ul, li, figure, figcaption, blockquote {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Assure une bordure de boîte consistante dans tous les navigateurs */
+  body, button, input, select, textarea {
+    border: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Réinitialise la police et la taille par défaut */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  /* Supprime la liste des puces par défaut et les styles de liste */
+  ul {
+    list-style: none;
+  }
+  
+  /* Supprime la décoration de lien par défaut */
+  a {
+    text-decoration: none;
+  }
+  
+  /* Assure une police grasse uniforme pour les éléments de titre */
+  h1, h2, h3 {
+    font-weight: bold;
+  }
+  

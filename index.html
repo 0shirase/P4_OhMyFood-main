@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OhMyFood</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/style.css">
+    <style>
+        .loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .loader::after {
+            content: "";
+            width: 75px;
+            height: 75px;
+            border: 15px solid #dddddd;
+            border-top-color: aqua;
+            border-radius: 50%;
+            animation: loading 0.75s ease infinite;
+        }
+        @keyframes loading{
+            from {transform: rotate(0turn) }
+            to {transform: rotate(1 turn) }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader"></div>
+    <div class="main-container">
+        <header>
+            <img class="logo" src="./assets/images/logo/ohmyfood.png" alt="image du logo ohmyfood">
+        </header>
+        <main class="main-container">
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Paris, Belleville</p>
+            </div>
+            <div class="info-group">
+                <h1 class="section-title">Réservez le menu qui vous convient</h1>
+                <p class="info">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
+            </div>
+            <div class="exploration-restaurants">
+                <button class="button">Explorer nos restaurants</button>
+            </div>
+            <section class="fonctionnement">
+                <h2 class="section-title">Fonctionnement</h2>
+                <div class="fonctionnement-cards">
+                    <article class="card-content card">
+                        <p class="icones-numbers">1</p>
+                        <i class="fa-solid fa-mobile-screen-button fa-icones"></i>
+                        <h3 class="card-title">Choisissez un restaurant</h3>
+                    </article>
+                    <article class="card-content card">
+                        <p class="icones-numbers">2</p>
+                        <i class="fa-solid fa-list fa-icones"></i>
+                        <h3 class="card-title">Composez votre menu</h3>
+                    </article>
+                    <article class="card-content card">
+                        <p class="icones-numbers">3</p>
+                        <i class="fa-solid fa-store"></i>
+                        <h3 class="card-title">Dégustez au restaurant</h3>
+                    </article>
+                </div>
+            </section>
+    </div>
+    <section class="restaurants">
+        <h2 class="section-title">Restaurants</h2>
+        <div class="restaurants-cards">
+            <a href="./restaurants/la-palette-du-gout.html">
+                <article class="card">
+                    <img src="./assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+                        alt="Image d'un plat">
+                    <div class="card-content">
+                        <p class="new">Nouveau</p>
+                        <div class="card-txt">
+                            <div class="card-title">
+                                <h3>La palette du goût</h3>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart heart-empty"></i>
+                                    <i class="fa-solid fa-heart heart-full"></i>
+                                </div>
+                            </div>
+                            <p class="card-subtitle">Ménilmontant</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="./restaurants/la-note-enchantee.html">
+                <article class="card">
+                    <img src="./assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image d'un plat">
+                    <div class="card-content">
+                        <p class="new">Nouveau</p>
+                        <div class="card-txt">
+                            <div class="card-title">
+                                <h3>La note enchantée</h3>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart heart-empty"></i>
+                                    <i class="fa-solid fa-heart heart-full"></i>
+                                </div>
+                            </div>
+                            <p class="card-subtitle">Charonne</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="./restaurants/a-la-francaise.html">
+                <article class="card">
+                    <img src="./assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Image d'un plat">
+                    <div class="card-content">
+                        <div class="card-txt">
+                            <div class="card-title">
+                                <h3>À la française</h3>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart heart-empty"></i>
+                                    <i class="fa-solid fa-heart heart-full"></i>
+                                </div>
+                            </div>
+                            <p class="card-subtitle">Cité Rouge</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+            <a href="./restaurants/le-delice-des-sens.html">
+                <article class="card">
+                    <img src="./assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+                        alt="Image d'un plat">
+                    <div class="card-content">
+                        <div class="card-txt">
+                            <div class="card-title">
+                                <h3>Le délice des sens</h3>
+                                <div class="heart">
+                                    <i class="fa-regular fa-heart heart-empty"></i>
+                                    <i class="fa-solid fa-heart heart-full"></i>
+                                </div>
+                            </div>
+                            <p class="card-subtitle">Folie-Méricourt</p>
+                        </div>
+                    </div>
+                </article>
+            </a>
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+            <h2 class="section-title"> ohmyfood </h2>
+            <ul class="footer-list">
+                <li class="footer-logo">
+                    <i class="fa-solid fa-utensils"></i>
+                    <p>Proposer un restaurant</p>
+                </li>
+                <li class="footer-logo">
+                    <i class="fa-solid fa-handshake"></i>
+                    <p>Devenir partenaire</p>
+                </li>
+                <li>
+                    <p>Mentions légales</p>
+                </li>
+                <li>
+                    <a href="lucas0999.lb@gmail.com">
+                        <p>Contact</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>
