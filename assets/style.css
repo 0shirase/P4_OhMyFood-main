@@ -90,6 +90,9 @@ body {
   margin: 0;
   padding: 0;
   max-width: 1440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .card {
@@ -487,6 +490,14 @@ body {
   padding-top: 20px;
 }
 
+@media (min-width: 1025px) {
+  .menu .main-container {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: 200px;
+    margin-right: 200px;
+  }
+}
 header {
   display: flex;
   width: 100%;
@@ -526,6 +537,14 @@ header {
   position: absolute;
   right: 80px;
   bottom: 10px;
+}
+
+@media (min-width: 1025px) {
+  .menu .fa-heart {
+    position: absolute;
+    right: 160px;
+    bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -148,3 +148,12 @@
     padding-bottom: 45px;
     padding-top: 20px;
 }
+
+@media (min-width: 1025px) {
+    .menu .main-container {
+        padding-left: 16px;
+        padding-right: 16px;
+        margin-left:200px;
+        margin-right: 200px;
+    }
+}
