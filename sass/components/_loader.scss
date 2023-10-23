@@ -1,0 +1,38 @@
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: grey;
+    animation: loader 1s 2s forwards;
+}
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: aqua;
+    border-radius: 50%;
+    animation: loading 1.50s ease infinite;
+}
+@keyframes loading {
+
+    from { transform: rotate(0turn) }
+    to { transform: rotate(1turn) };
+}
+
+@keyframes loader {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
