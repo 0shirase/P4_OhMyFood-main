@@ -90,6 +90,8 @@ body {
   margin: 0;
   padding: 0;
   max-width: 1440px;
+  width: 100%;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -357,7 +359,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 55px;
+  padding-left: 33px;
   padding-right: 55px;
 }
 
@@ -459,27 +461,93 @@ body {
 }
 
 .menu .card {
-  padding: 15px;
-  margin: 0;
+  position: relative;
   display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.menu .card-txt {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.menu .card-title {
-  color: black;
-}
-
-.menu .card-subtitle {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
+  width: 100%;
+  margin: 10px 0px;
+  padding: 0;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.menu .card:hover > .card-checkout {
+  margin-right: 0px;
+}
+.menu .card:hover > .card-checkout .menu .card::after {
+  transform: rotate(360deg);
+}
+
+.menu .card-content {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  width: 100%;
+  margin: 2%;
+  gap: 2%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu .card-description {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  padding: 5px;
+}
+
+.menu h4 {
+  margin: 0;
+  font-weight: 900;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu p {
+  margin: 0;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.card-price {
+  display: flex;
+  align-items: flex-end;
+  width: 15%;
+  padding: 5px;
+  align-items: center;
+}
+.card-price p {
+  margin: 0;
+}
+
+.card-checkout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+  width: 20%;
+  margin-right: -20%;
+  border-radius: 0px 15px 15px 0px;
+  background-color: #99E2D0;
+  transition: margin-right 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
+}
+.card-checkout::after {
+  display: inline-block;
+  margin: auto;
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 25px;
+  content: "\f058";
+  color: white;
+  transition: transform 800ms cubic-bezier(0.63, 1.23, 0.96, 0.92);
 }
 
 .commander {
@@ -497,13 +565,34 @@ body {
     margin-left: 200px;
     margin-right: 200px;
   }
+  .menu .menu-header {
+    display: flex;
+    justify-content: center;
+  }
 }
 header {
   display: flex;
   width: 100%;
-  justify-content: center;
   margin-bottom: 3%;
   margin-top: 4%;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-arrow-left {
+  display: flex;
+  padding-left: 15px;
+  color: black;
+  font-size: 20px;
+}
+
+header a {
+  display: flex;
+  align-items: center;
+}
+
+.menu-logo {
+  margin: 0 auto;
 }
 
 .heart {
@@ -542,8 +631,23 @@ header {
 @media (min-width: 1025px) {
   .menu .fa-heart {
     position: absolute;
-    right: 160px;
     bottom: 10px;
+    right: initial;
+  }
+}
+.menu-categorie:nth-child(1) .card {
+  animation: appearEntrance 1.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes appearEntrance {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
