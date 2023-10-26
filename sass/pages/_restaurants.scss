@@ -80,9 +80,21 @@
     object-fit: cover;
 }
 
-.title {
-    padding-bottom: 25px;
-    padding-top: 25px;
+.menu .title {
+    position: relative;
+    font-size: 18px;
+    margin: 4% 0% 2% 0%;
+    padding: 10px 0px;
+}
+
+.menu .title::after {
+    display: block;
+    position: absolute;
+    bottom: 2px;
+    content: "";
+    width: 40px;
+    height: 4px;
+    background-color: #99E2D0;
 }
 
 .menu-header {
@@ -162,7 +174,7 @@
 
 .menu h4 {
     margin: 0;
-    font-weight: 900;
+    font-weight: bolder;
     font-size: 16px;
     white-space: nowrap;
     overflow: hidden;
@@ -186,6 +198,7 @@
 
     & p {
         margin: 0;
+        font-weight: bolder;
     }
 }
 

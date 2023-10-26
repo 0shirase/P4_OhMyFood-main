@@ -1,9 +1,47 @@
-.menu-categorie:nth-child(1) .card {
+/* CSS pour les éléments d'entrée */
+.menu-categories:nth-child(1) .card {
     animation: appearEntrance 1.5s ease forwards;
     opacity: 0;
   }
-
+  
+  /* CSS pour les éléments de plat */
+  .menu-categories:nth-child(2) .card {
+    animation: appearPlat 5.5s ease forwards;
+    opacity: 0;
+  }
+  
+  /* CSS pour les éléments de dessert */
+  .menu-categories:nth-child(3) .card {
+    animation: appearDessert 9.5s ease forwards;
+    opacity: 0;
+  }
+  
+  /* Animation pour les éléments d'entrée */
   @keyframes appearEntrance {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation pour les éléments de plat */
+  @keyframes appearPlat {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Animation pour les éléments de dessert */
+  @keyframes appearDessert {
     0% {
       opacity: 0;
       transform: translateY(-20px);
