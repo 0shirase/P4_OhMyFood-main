@@ -90,11 +90,7 @@ body {
   margin: 0;
   padding: 0;
   max-width: 1440px;
-  width: 100%;
   box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
 
 .card {
@@ -199,6 +195,10 @@ body {
     order: 1;
   }
 }
+.logo {
+  height: 45px;
+}
+
 /****** location *****/
 .location {
   display: flex;
@@ -598,8 +598,8 @@ body {
 header {
   display: flex;
   width: 100%;
-  margin-bottom: 3%;
-  margin-top: 4%;
+  margin-bottom: 2%;
+  margin-top: 2%;
   align-items: center;
   justify-content: center;
 }
