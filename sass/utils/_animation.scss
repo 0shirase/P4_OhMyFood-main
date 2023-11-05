@@ -1,18 +1,18 @@
 /* CSS pour les éléments d'entrée */
-.menu-categories:nth-child(1) .card {
+.entree-card .card {
     animation: appearEntrance 1.5s ease forwards;
     opacity: 0;
   }
   
   /* CSS pour les éléments de plat */
-  .menu-categories:nth-child(2) .card {
+  .plats-card .card {
     animation: appearPlat 5.5s ease forwards;
     opacity: 0;
   }
   
   /* CSS pour les éléments de dessert */
-  .menu-categories:nth-child(3) .card {
-    animation: appearDessert 9.5s ease forwards;
+  .dessert-card .card {
+    animation: appearDessert 11.5s ease forwards;
     opacity: 0;
   }
   
