@@ -9,7 +9,6 @@ body, h1, h2, h3, p, ul, li, figure, figcaption, blockquote {
   /* Assure une bordure de boîte consistante dans tous les navigateurs */
   body, button, input, select, textarea {
     border: 0;
-    box-sizing: border-box;
   }
   
   /* Réinitialise la police et la taille par défaut */

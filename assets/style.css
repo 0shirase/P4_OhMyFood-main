@@ -9,7 +9,6 @@ body, h1, h2, h3, p, ul, li, figure, figcaption, blockquote {
 /* Assure une bordure de boîte consistante dans tous les navigateurs */
 body, button, input, select, textarea {
   border: 0;
-  box-sizing: border-box;
 }
 
 /* Réinitialise la police et la taille par défaut */
@@ -89,18 +88,22 @@ h1, h2, h3 {
 body {
   margin: 0;
   padding: 0 50px;
-  max-width: 1440px;
-  box-sizing: border-box;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .card {
   position: relative;
-  margin: 30px;
   background-color: #f6f6f6;
   border-radius: 20px;
   padding: 5px;
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+
+.main-container {
+  max-width: 1440px;
 }
 
 .button {
@@ -122,6 +125,7 @@ body {
 
 .menu .button {
   border-radius: 25px;
+  width: 25%;
 }
 
 .footer {
@@ -243,13 +247,17 @@ body {
 .fonctionnement {
   display: flex;
   flex-direction: column;
-  padding-bottom: 30px;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 45px;
+  padding: 20px;
+  gap: 20px;
+}
+.fonctionnement .fonctionnement-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 .fonctionnement .fonctionnement-cards .card {
   padding: 16px;
+  margin: 0;
 }
 .fonctionnement-cards .card-content {
   display: flex;
@@ -317,14 +325,13 @@ body {
   }
   .fonctionnement {
     width: 100%;
-    padding: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 20px;
+    padding-bottom: 35px;
   }
-  .fonctionnement-cards {
+  .fonctionnement .fonctionnement-cards {
     display: flex;
+    flex-direction: row;
     gap: 30px;
-    padding-top: 15px;
   }
   .fonctionnement-cards .card {
     width: 33%;
@@ -358,11 +365,8 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #f6f6f6;
-}
-
-.restaurants .section-title {
-  padding-left: 10%;
-  padding-right: 10%;
+  gap: 30px;
+  padding: 20px;
 }
 
 .restaurants-cards {
@@ -370,8 +374,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-left: 33px;
-  padding-right: 55px;
+  gap: 20px;
 }
 
 .restaurants-cards a {
@@ -415,6 +418,7 @@ body {
 
 .restaurants-cards .card {
   background-color: white;
+  margin: 0;
 }
 
 /****** Media queries ***********/
@@ -454,6 +458,7 @@ body {
 .menu-header {
   display: flex;
   position: relative;
+  justify-content: space-between;
 }
 
 .menu .menu-background {
@@ -526,7 +531,7 @@ body {
 .menu h4 {
   margin: 0;
   font-weight: bolder;
-  font-size: 16px;
+  font-size: 18px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -543,7 +548,6 @@ body {
 .card-price {
   display: flex;
   align-items: flex-end;
-  width: 15%;
   padding: 5px;
   align-items: center;
 }
@@ -647,9 +651,11 @@ header a {
   opacity: 1;
 }
 
+.menu-heart {
+  padding: 40px;
+}
+
 .menu .fa-heart {
-  position: absolute;
-  right: 80px;
   bottom: 10px;
 }
 

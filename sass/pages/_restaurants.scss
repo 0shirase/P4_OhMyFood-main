@@ -4,20 +4,17 @@
     display: flex;
     flex-direction: column;
     background-color: #f6f6f6;
+    gap: 30px;
+    padding: 20px;
 }
 
-.restaurants .section-title {
-    padding-left: 10%;
-    padding-right: 10%;
-}
 
 .restaurants-cards {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-left: 33px;
-    padding-right: 55px;
+    gap: 20px;
 }
 
 .restaurants-cards a {
@@ -61,6 +58,7 @@
 
 .restaurants-cards .card {
     background-color: white;
+    margin: 0;
 }
 
 /****** Media queries ***********/
@@ -100,6 +98,7 @@
 .menu-header {
     display: flex;
     position: relative;
+    justify-content: space-between;
 }
 
 .menu .menu-background {
@@ -175,7 +174,7 @@
 .menu h4 {
     margin: 0;
     font-weight: bolder;
-    font-size: 16px;
+    font-size: 18px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -192,7 +191,6 @@
 .card-price {
     display: flex;
     align-items: flex-end;
-    width: 15%;
     padding: 5px;
     align-items: center;
 
