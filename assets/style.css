@@ -317,49 +317,6 @@ body {
   font-size: 14px;
 }
 
-/****** Media queries ***********/
-@media (min-width: 1025px) {
-  .section-title {
-    padding: 0;
-    margin: 0;
-  }
-  .fonctionnement {
-    width: 100%;
-    padding: 20px;
-    padding-bottom: 35px;
-  }
-  .fonctionnement .fonctionnement-cards {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-  }
-  .fonctionnement-cards .card {
-    width: 33%;
-    margin: 0;
-  }
-  .restaurants {
-    width: 100%;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 40px;
-  }
-  .restaurants-cards a {
-    width: 47%;
-  }
-  .restaurants .restaurants-cards {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    margin-top: 25px;
-    gap: 35px;
-    padding: 0;
-  }
-  .restaurants .card {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-  }
-}
 /******* restaurants *********/
 .restaurants {
   display: flex;
@@ -423,8 +380,48 @@ body {
 
 /****** Media queries ***********/
 @media (min-width: 1025px) {
+  .section-title {
+    padding: 0;
+    margin: 0;
+  }
+  .fonctionnement {
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 35px;
+  }
+  .fonctionnement .fonctionnement-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+  }
+  .fonctionnement-cards .card {
+    width: 33%;
+    margin: 0;
+  }
   .restaurants .section-title {
     padding: 0;
+  }
+  .restaurants {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 40px;
+  }
+  .restaurants-cards a {
+    width: 47%;
+  }
+  .restaurants .restaurants-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    gap: 35px;
+    padding: 0;
+  }
+  .restaurants .card {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
 }
 /***** menu restaurants ******/
