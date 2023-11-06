@@ -28,7 +28,7 @@ a {
 }
 
 /* Assure une police grasse uniforme pour les éléments de titre */
-h1, h2, h3, h4{
+h1, h2, h3 {
   font-weight: bold;
 }
 
@@ -77,8 +77,25 @@ h1, h2, h3, h4{
   font-family: "Roboto", sans-serif;
 }
 
-.section-title {
+h1, h2 {
   font-family: "Shrikhand", cursive;
+}
+
+.menu h4 {
+  margin: 0;
+  font-weight: bolder;
+  font-size: 18px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu p {
+  margin: 0;
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 * {
@@ -87,11 +104,9 @@ h1, h2, h3, h4{
 
 body {
   margin: 0;
-  padding: 0 50px;
   width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
 
 .card {
@@ -126,7 +141,8 @@ body {
 
 .menu .button {
   border-radius: 25px;
-  width: 25%;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .footer {
@@ -440,7 +456,6 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
-  flex-direction: column;
 }
 
 .menu .title {
@@ -478,7 +493,7 @@ body {
   padding-bottom: 20px;
 }
 
-.menu .main-container {
+.menu .main-menu {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
@@ -533,23 +548,6 @@ body {
   padding: 5px;
 }
 
-.menu h4 {
-  margin: 0;
-  font-weight: bolder;
-  font-size: 18px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.menu p {
-  margin: 0;
-  font-size: 15px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .card-price {
   display: flex;
   align-items: flex-end;
@@ -592,15 +590,16 @@ body {
 }
 
 @media (min-width: 1025px) {
-  .menu .main-container {
-    padding-left: 16px;
-    padding-right: 16px;
+  .menu .main-menu {
+    padding-left: 110px;
+    padding-right: 110px;
     margin-left: 200px;
     margin-right: 200px;
   }
   .menu .menu-header {
     display: flex;
     justify-content: center;
+    padding-top: 20px;
   }
 }
 header {
@@ -672,20 +671,20 @@ header a {
   }
 }
 /* CSS pour les éléments d'entrée */
-.menu-categories:nth-child(1) .card {
+.entree-card .card {
   animation: appearEntrance 1.5s ease forwards;
   opacity: 0;
 }
 
 /* CSS pour les éléments de plat */
-.menu-categories:nth-child(2) .card {
+.plats-card .card {
   animation: appearPlat 5.5s ease forwards;
   opacity: 0;
 }
 
 /* CSS pour les éléments de dessert */
-.menu-categories:nth-child(3) .card {
-  animation: appearDessert 9.5s ease forwards;
+.dessert-card .card {
+  animation: appearDessert 11.5s ease forwards;
   opacity: 0;
 }
 

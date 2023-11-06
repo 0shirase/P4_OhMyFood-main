@@ -50,13 +50,11 @@
     flex-direction: column;
     padding: 20px;
     gap: 20px;
-    padding-bottom: 45px;
-    padding-top: 45px;
 
 .fonctionnement-cards {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
 }
 
 .fonctionnement-cards .card {
@@ -137,8 +135,6 @@
     background-color: #f6f6f6;
     gap: 30px;
     padding: 20px;
-    padding-top: 35px;
-    padding-bottom: 45px;
 }
 
 
@@ -205,10 +201,8 @@
 
    .fonctionnement {
     width: 100%;
-    padding-top: 40px;
-    padding-bottom: 50px;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding: 20px;
+    padding-bottom: 35px;
    }
 
    .fonctionnement .fonctionnement-cards {
@@ -229,8 +223,6 @@
    .restaurants {
     width: 100%;
     padding-bottom: 40px;
-    padding-left: 10%;
-    padding-right: 10%;
    }
 
    .restaurants-cards a{

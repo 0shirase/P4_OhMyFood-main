@@ -1,53 +1,53 @@
 /* CSS pour les éléments d'entrée */
 .entree-card .card {
-    animation: appearEntrance 1.5s ease forwards;
+  animation: appearEntrance 1.5s ease forwards;
+  opacity: 0;
+}
+
+/* CSS pour les éléments de plat */
+.plats-card .card {
+  animation: appearPlat 5.5s ease forwards;
+  opacity: 0;
+}
+
+/* CSS pour les éléments de dessert */
+.dessert-card .card {
+  animation: appearDessert 11.5s ease forwards;
+  opacity: 0;
+}
+
+/* Animation pour les éléments d'entrée */
+@keyframes appearEntrance {
+  0% {
     opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  /* CSS pour les éléments de plat */
-  .plats-card .card {
-    animation: appearPlat 5.5s ease forwards;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation pour les éléments de plat */
+@keyframes appearPlat {
+  0% {
     opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  /* CSS pour les éléments de dessert */
-  .dessert-card .card {
-    animation: appearDessert 10.5s ease forwards;
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Animation pour les éléments de dessert */
+@keyframes appearDessert {
+  0% {
     opacity: 0;
+    transform: translateY(-20px);
   }
-  
-  /* Animation pour les éléments d'entrée */
-  @keyframes appearEntrance {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  
-  /* Animation pour les éléments de plat */
-  @keyframes appearPlat {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
-  /* Animation pour les éléments de dessert */
-  @keyframes appearDessert {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
+}
