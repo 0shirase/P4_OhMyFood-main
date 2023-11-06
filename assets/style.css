@@ -28,7 +28,7 @@ a {
 }
 
 /* Assure une police grasse uniforme pour les éléments de titre */
-h1, h2, h3 {
+h1, h2, h3, h4{
   font-weight: bold;
 }
 
@@ -87,9 +87,11 @@ h1, h2, h3 {
 
 body {
   margin: 0;
+  padding: 0 50px;
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .card {
@@ -124,8 +126,7 @@ body {
 
 .menu .button {
   border-radius: 25px;
-  padding-left: 35px;
-  padding-right: 35px;
+  width: 25%;
 }
 
 .footer {
@@ -439,6 +440,7 @@ body {
   width: 100%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .menu .title {
@@ -476,7 +478,7 @@ body {
   padding-bottom: 20px;
 }
 
-.menu .main-menu {
+.menu .main-container {
   background-color: #f6f6f6;
   display: flex;
   flex-direction: column;
@@ -590,16 +592,15 @@ body {
 }
 
 @media (min-width: 1025px) {
-  .menu .main-menu {
-    padding-left: 110px;
-    padding-right: 110px;
+  .menu .main-container {
+    padding-left: 16px;
+    padding-right: 16px;
     margin-left: 200px;
     margin-right: 200px;
   }
   .menu .menu-header {
     display: flex;
     justify-content: center;
-    padding-top: 20px;
   }
 }
 header {
@@ -671,20 +672,20 @@ header a {
   }
 }
 /* CSS pour les éléments d'entrée */
-.entree-card .card {
+.menu-categories:nth-child(1) .card {
   animation: appearEntrance 1.5s ease forwards;
   opacity: 0;
 }
 
 /* CSS pour les éléments de plat */
-.plats-card .card {
+.menu-categories:nth-child(2) .card {
   animation: appearPlat 5.5s ease forwards;
   opacity: 0;
 }
 
 /* CSS pour les éléments de dessert */
-.dessert-card .card {
-  animation: appearDessert 11.5s ease forwards;
+.menu-categories:nth-child(3) .card {
+  animation: appearDessert 9.5s ease forwards;
   opacity: 0;
 }
 
