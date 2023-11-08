@@ -77,8 +77,12 @@ h1, h2, h3 {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2 {
-  font-family: "Shrikhand", cursive;
+.menu h1 {
+  font-family: "Shrikhand", serif;
+}
+
+h2 {
+  font-family: "Roboto", sans-serif;
 }
 
 .menu h4 {
@@ -485,6 +489,7 @@ body {
   display: flex;
   position: relative;
   justify-content: space-between;
+  padding-right: 20px;
 }
 
 .menu .menu-background {
@@ -558,7 +563,6 @@ body {
   display: flex;
   align-items: flex-end;
   padding: 5px;
-  align-items: center;
 }
 .card-price p {
   margin: 0;
